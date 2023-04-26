@@ -127,6 +127,8 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+.idea/
+.allure-results/
 
 # Spyder project settings
 .spyderproject
