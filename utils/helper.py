@@ -23,6 +23,4 @@ class BaseSession(Session):
             allure.attach(f'{str(response.status_code)} {curlify.to_curl(response.request)}', 'curl_request',
                           AttachmentType.TEXT, '.log')
             allure.attach(response.text, 'response', AttachmentType.TEXT, '.log')
-            png = browser.driver.get_screenshot_as_png()
-            allure.attach(body=png, name='screenshot', attachment_type=AttachmentType.PNG, extension='.png')
         return response
