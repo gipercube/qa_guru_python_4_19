@@ -77,5 +77,5 @@ pytest . --alluredir=allure-results
 В отчетах Allure для каждого UI-теста прикреплен не только скриншот, но и видео прохождения теста
 
 <p align="center">
-  <img title="Video" src="resources/video/4f561a214d4de655f056eee249f26c95.mp4"/>
+  <img title="Video" src="resources/video/4f561a214d4de655f056eee249f26c95.gif"/>
 </p>
