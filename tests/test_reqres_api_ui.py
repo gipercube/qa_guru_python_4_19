@@ -30,11 +30,11 @@ def test_single_user_not_found(reqres_ui):
 @allure.label('owner', 'gipercube')
 @allure.feature('UI')
 @allure.title('Один ресурс')
-def test_single_resourse_name(reqres):
+def test_single_resourse_name(reqres_ui):
     """Показан один ресурс"""
     # GIVEN
     with step("SINGLE <RESOURCE> (API)"):
-        response: Response = reqres.get(
+        response: Response = reqres_ui.get(
             url='/api/unknown/2'
         )
         response_data = response.json()
@@ -51,11 +51,11 @@ def test_single_resourse_name(reqres):
 @allure.label('owner', 'gipercube')
 @allure.feature('UI')
 @allure.title('Успешная регистрация')
-def test_login_successful(reqres):
+def test_login_successful(reqres_ui):
     """Успешная регистрация пользователя с получением токена"""
     # GIVEN
     with step("REGISTER REQUEST (API)"):
-        response: Response = reqres.post(
+        response: Response = reqres_ui.post(
             url='/api/register',
             data={'email': 'eve.holt@reqres.in', 'password': 'pistol'}
         )
@@ -73,11 +73,11 @@ def test_login_successful(reqres):
 @allure.label('owner', 'gipercube')
 @allure.feature('UI')
 @allure.title('Успешная авторизация')
-def test_login_successful(reqres):
+def test_login_successful(reqres_ui):
     """Успешная авторизация пользователя"""
     # GIVEN
     with step("LOGIN REQUEST (API)"):
-        response: Response = reqres.post(
+        response: Response = reqres_ui.post(
             url='/api/login',
             data={'email': 'eve.holt@reqres.in', 'password': 'cityslicka'}
         )
@@ -95,11 +95,11 @@ def test_login_successful(reqres):
 @allure.label('owner', 'gipercube')
 @allure.feature('UI')
 @allure.title('Ошибка авторизации при входе без пароля')
-def test_login_unsuccessful(reqres):
+def test_login_unsuccessful(reqres_ui):
     """Ошибка авторизации - не введен пароль"""
     # GIVEN
     with step("LOGIN REQUEST (API)"):
-        response: Response = reqres.post(
+        response: Response = reqres_ui.post(
             url='/api/login',
             data={'email': 'peter@klaven'}
         )

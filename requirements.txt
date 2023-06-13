@@ -4,5 +4,5 @@ voluptuous
 pytest-voluptuous
 allure-pytest
 curlify
-selene
+selene==2.0.0b17
 selenium

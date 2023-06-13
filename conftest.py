@@ -8,10 +8,12 @@ from utils.attach import add_logs, add_screenshot, add_html, add_video
 from utils.helper import BaseSession
 
 
-# @pytest.fixture(scope="function")
-# def reqres_api():
-#    with BaseSession(base_url="https://reqres.in") as session:
-#        yield session
+@pytest.fixture(scope="function")
+def reqres_api():
+    with BaseSession(base_url="https://reqres.in") as session:
+        yield session
+
+
 def pytest_addoption(parser):
     parser.addoption(
         '--browser_version',
