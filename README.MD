@@ -58,7 +58,7 @@ pytest . --alluredir=allure-results
 <p><img src="resources/screenshots/chrome_37wxhxSSAY.png" alt="Allure in Jenkins"/></p>
 
 
-### <img width="6%" title="Allure" src="resources/logo/allure.png"> [Allure](https://jenkins.autotests.cloud/job/lastfm_graduate_work_qa_quru_ui/100/allure/)
+### <img width="6%" title="Allure" src="resources/logo/allure.png"> [Allure](https://jenkins.autotests.cloud/job/qa_guru_python_4_25/allure/)
 
 #### Примеры отчетов
 
