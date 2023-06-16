@@ -47,7 +47,7 @@ pip install -r requirements.txt
 pytest . --alluredir=allure-results
 ```
 
-## <img width="6%" title="Jenkins" src="resources/logo/Jenkins.png"> Запуск тестов из [Jenkins](https://jenkins.autotests.cloud/job/lastfm_graduate_work_qa_quru_ui/)
+## <img width="6%" title="Jenkins" src="resources/logo/Jenkins.png"> Запуск тестов из [Jenkins](https://jenkins.autotests.cloud/job/qa_guru_python_4_25/)
 Запуск тестов из Jenkins:
 Добавить проект в Jenkins и нажать кнопку "Собрать сейчас".
 
